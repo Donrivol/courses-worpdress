@@ -1,0 +1,16 @@
+Index: .idea/project.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module type=\"WEB_MODULE\" version=\"4\">\r\n  <component name=\"NewModuleRootManager\">\r\n    <content url=\"file://$MODULE_DIR$\">\r\n      <excludeFolder url=\"file://$MODULE_DIR$/.tmp\" />\r\n      <excludeFolder url=\"file://$MODULE_DIR$/temp\" />\r\n      <excludeFolder url=\"file://$MODULE_DIR$/tmp\" />\r\n    </content>\r\n    <orderEntry type=\"inheritedJdk\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n  </component>\r\n</module>
+===================================================================
+diff --git a/.idea/project.iml b/.idea/project.iml
+--- a/.idea/project.iml	
++++ b/.idea/project.iml	
+@@ -8,5 +8,6 @@
+     </content>
+     <orderEntry type="inheritedJdk" />
+     <orderEntry type="sourceFolder" forTests="false" />
++    <orderEntry type="library" name="normalize" level="application" />
+   </component>
+ </module>
+\ No newline at end of file

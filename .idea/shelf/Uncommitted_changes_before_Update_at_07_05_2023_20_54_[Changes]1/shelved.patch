@@ -1,0 +1,495 @@
+Index: src/css/style.css
+===================================================================
+diff --git a/src/css/style.css b/src/css/style.css
+deleted file mode 100644
+--- a/src/css/style.css	
++++ /dev/null	
+@@ -1,331 +0,0 @@
+-* {
+-    box-sizing: border-box;
+-    margin: 0;
+-    padding: 0;
+-}
+-
+-.container {
+-    position: relative;
+-    width: 1140px;
+-    margin: 0 auto;
+-}
+-
+-.promo {
+-    height: 800px;
+-    background: url("../img/bg/main_bg.png") center center/cover no-repeat;
+-    padding: 38px 0 62px 0;
+-}
+-
+-.logo .logo_img {
+-    display: block;
+-    margin: 0 auto;
+-}
+-
+-.logo .logo_text {
+-    font-weight: 500;
+-    font-size: 15px;
+-    text-transform: uppercase;
+-    color: #FFFFFF;
+-    line-height: 24px;
+-    text-align: center;
+-    margin-top: 14px;
+-
+-}
+-
+-h1 {
+-    margin-top: 53px;
+-}
+-
+-html {
+-    font-family: 'Roboto', sans-serif;
+-}
+-
+-.title {
+-    font-family: 'Roboto - Black', sans-serif;
+-    font-weight: 900;
+-    font-size: 41px;
+-    line-height: 24px;
+-    text-align: center;
+-    text-transform: uppercase;
+-    color: #F9BF3B;
+-}
+-
+-h2.title {
+-    margin-top: 30px;
+-}
+-
+-.simple .title_big {
+-    font-weight: 900;
+-    font-size: 80px;
+-    text-transform: uppercase;
+-    color: #FFFFFF;
+-    text-align: center;
+-    margin-top: 21px;
+-}
+-
+-.promo .promo_text {
+-    font-weight: 300;
+-    font-size: 21px;
+-    line-height: 28px;
+-    text-align: center;
+-    color: #FFFFFF;
+-    margin-top: 23px;
+-    padding: 0 13px;
+-}
+-
+-.promo .promo_text span {
+-    color: #F9BF3B;
+-    font-weight: 700;
+-    text-transform: uppercase;
+-}
+-
+-.promo .promo_btn, .btn_gift {
+-    display: block;
+-    margin: 0 auto;
+-    margin-top: 73px;
+-    width: 313px;
+-    height: 72px;
+-    border: 4px solid rgba(0,0,0,0.23);
+-    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.18);
+-    background-image: linear-gradient(to top, #2798b9 0%, #3ab6da 100%);
+-    font-family: 'Roboto Condensed', sans-serif;
+-    font-weight: 400;
+-    font-size: 21px;
+-    line-height: 24px;
+-    text-transform: uppercase;
+-    color: #FFFFFF;
+-    cursor: pointer;
+-}
+-
+-.more {
+-    margin-top: 73px;
+-}
+-
+-.more .more_text {
+-    color: #FFFFFF;
+-    font-weight: 400;
+-    font-size: 15px;
+-    text-transform: uppercase;
+-    text-align: center;
+-}
+-
+-.more .more_img {
+-    display: block;
+-    margin: 0 auto;
+-    margin-top: 13px;
+-}
+-
+-.waiting {
+-    min-height: 604px;
+-    background: #EFEFEF;
+-    padding: 85px 0 75px 0;
+-}
+-
+-.waiting .waiting_header, .finish .finish_header {
+-    color: #252525;
+-    font-weight: 400;
+-    font-size: 30px;
+-    text-transform: uppercase;
+-    text-align: center;
+-}
+-
+-.finish .finish_header {
+-    color: #FFF;
+-}
+-
+-.waiting .waiting_devider, .finish .finish_divider {
+-    margin: 0 auto;
+-    margin-top: 18px;
+-    width: 217px;
+-    height: 4px;
+-    background: #F9BF3B;
+-}
+-
+-.waiting .waiting_subheader {
+-    font-weight: 400;
+-    font-size: 23px;
+-    text-align: center;
+-    color: #4A4A4A;
+-    margin-top: 17px;
+-
+-}
+-
+-.waiting .waiting_wrapper {
+-    display: flex;
+-    justify-content: space-between;
+-    margin-top: 45px;
+-}
+-
+-.waiting .waiting_wrapper .waiting_item {
+-    width: 339px;
+-    vertical-align: top;
+-    text-align: center;
+-}
+-
+-.waiting .waiting_wrapper .waiting_item .waiting_img {
+-    width: 100%;
+-}
+-
+-.waiting .waiting_wrapper .waiting_item .waiting_descr {
+-    margin-top: 33px;
+-    font-weight: 300;
+-    font-size: 15px;
+-    line-height: 21px;
+-    color: #4A4A4A;
+-
+-}
+-
+-.optimization {
+-    min-height: 550px;
+-    padding: 102px 0 107px 0;
+-}
+-
+-.optimization .optimization_header {
+-    margin-left: 391px;
+-    font-weight: 900;
+-    font-size: 28px;
+-    text-transform: uppercase;
+-    color: #299CBD;
+-
+-}
+-
+-.optimization .optimization_text {
+-    margin-top: 25px;
+-    margin-left: 391px;
+-    font-weight: 300;
+-    font-size: 17px;
+-    line-height: 27px;
+-    color: #4A4A4A;
+-}
+-
+-.optimization .optimization_text span {
+-    font-weight: 700;
+-}
+-
+-.optimization .optimization_img {
+-    position: absolute;
+-    z-index: -1;
+-    top: -54px;
+-    left: -240px;
+-}
+-
+-.finish {
+-    min-height: 447px;
+-    padding: 86px 0 79px 0;
+-    background: url("../img/bg/second_bg.png") center center/cover no-repeat;
+-}
+-
+-.finish .finish_wrapper {
+-    margin-top: 41px;
+-    display: flex;
+-    justify-content: space-between;
+-}
+-
+-.finish .finish_wrapper .finish_item {
+-    width: 204px;
+-}
+-
+-.finish .finish_wrapper .finish_item .finish_round {
+-    display: flex;
+-    justify-content: center;
+-    align-items: center;
+-    margin: 0 auto;
+-    width: 118px;
+-    height: 118px;
+-    background: #B4E2FF;
+-    border-radius: 100%;
+-}
+-
+-.finish .finish_wrapper .finish_item .finish_descr {
+-    margin-top: 25px;
+-    text-align: center;
+-    font-weight: 300;
+-    font-size: 17px;
+-    line-height: 20px;
+-    color: #EFEFEF;
+-
+-}
+-
+-.gift {
+-    min-height: 628px;
+-    background: #EFEFEF;
+-    padding: 86px 0 87px 0;
+-}
+-
+-.gift .gift_img {
+-    display: block;
+-    margin: 0 auto;
+-}
+-
+-.gift .gift_text {
+-    margin-top: 45px;
+-    font-weight: 400;
+-    font-size: 30px;
+-    line-height: 43px;
+-    text-align: center;
+-    color: #252525;
+-}
+-
+-.first {
+-    min-height: 604px;
+-    background: #FFFFFF;
+-    padding: 89px 0 52px 0;
+-}
+-
+-.first .first_img {
+-    display: block;
+-    margin: 0 auto;
+-}
+-
+-.first .first_header {
+-    margin-top: 36px;
+-    font-weight: 400;
+-    font-size: 30px;
+-    align-items: center;
+-    text-align: center;
+-    text-transform: uppercase;
+-    color: #252525;
+-}
+-
+-.first .date {
+-    margin-top: 30px;
+-    font-weight: 900;
+-    font-size: 36px;
+-    text-align: center;
+-    text-transform: uppercase;
+-    color: #299CBD;
+-}
+-
+-.first .limited {
+-    margin-top: 25px;
+-    font-weight: 400;
+-    font-size: 23px;
+-    text-align: center;
+-    color: #4A4A4A;
+-
+-}
+-
+-.footer {
+-    height: 170px;
+-    background: #1A1A1A;
+-    padding: 57px 0 69px 0;
+-}
+-
+-.footer .footer_text {
+-    font-weight: 300;
+-    font-size: 15px;
+-    line-height: 21px;
+-    text-align: center;
+-    text-decoration: none;
+-    color: #888888;
+-}
+-
+-.footer .footer_contact {
+-    font-weight: 300;
+-    font-size: 15px;
+-    line-height: 21px;
+-    text-align: center;
+-    color: #888888;
+-}
+-
+-a:visited {color:#888888; }
+Index: src/index.html
+===================================================================
+diff --git a/src/index.html b/src/index.html
+deleted file mode 100644
+--- a/src/index.html	
++++ /dev/null	
+@@ -1,149 +0,0 @@
+-<!doctype html>
+-<html lang="ua">
+-<head>
+-    <meta charset="UTF-8">
+-    <meta name="viewport"
+-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+-    <link rel="preconnect" href="https://fonts.googleapis.com">
+-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+-    <link rel="stylesheet" href="css/style.css">
+-    <title>Wordpress</title>
+-</head>
+-<body>
+-    <header class="promo">
+-        <div class="container">
+-            <div class="logo">
+-                <img src="img/logo.png" alt="logo" class="logo_img">
+-                <div class="logo_text">WordPress інтенсив</div>
+-            </div>
+-
+-            <h1 class="title">Створити свій сайт на WordPress </h1>
+-            <div class="simple">
+-                <h2 class="title_big">Це легко!</h2>
+-                <div class="line"></div>
+-            </div>
+-            <h2 class="title">Куди складніше зробити це правильно!</h2>
+-
+-            <div class="promo_text">
+-                Щодня в Україні з'являється понад 5 000 нових сайтів.<br> І лише одиниці з них стають популярними і приносять відчутний прибуток. В чому секрет? У чому формула успіху? Дізнайтесь на майбутньому дводенному <span>безкоштовному</span> Інтенсиві!
+-            </div>
+-
+-            <button class="promo_btn">Записатись на інтенсив!</button>
+-
+-            <div class="more">
+-                <div class="more_text">дізнатись більше про інтенсив</div>
+-                <img src="img/arrow_down.png" alt="arrow" class="more_img">
+-            </div>
+-
+-
+-        </div>
+-    </header>
+-
+-    <main class="waiting">
+-        <div class="container">
+-            <h2 class="waiting_header">Що вас чекає на нашому інтенсиві?</h2>
+-            <div class="waiting_devider"></div>
+-            <div class="waiting_subheader">2 безкоштовних повноцінних навчальних вебінарів, де:</div>
+-            <div class="waiting_wrapper">
+-                <div class="waiting_item">
+-                    <img src="img/waiting/waiting_1.png" alt="waiting1" class="waiting_img">
+-                    <div class="waiting_descr">Всього за два безкоштовні вебінари ми навчимо вас,
+-                        Як створити свій сайт на WordPress </div>
+-                </div>
+-                <div class="waiting_item">
+-                    <img src="img/waiting/waiting_2.png" alt="waiting2" class="waiting_img">
+-                    <div class="waiting_descr">Покажемо, як правильно оптимізувати сайт та зробити його привабливим для пошукових систем. Тільки свіжа, професійна та актуальна інформація!</div>
+-                </div>
+-                <div class="waiting_item">
+-                    <img src="img/waiting/waiting_3.png" alt="waiting3" class="waiting_img">
+-                    <div class="waiting_descr">Ви дізнаєтеся, що таке «хороша індексація», «висока відвідуваність», «стабільний приріст відвідувачів», «ТОП за запитами» і що набагато важливіше, як досягти всіх цих показників!</div>
+-                </div>
+-            </div>
+-        </div>
+-    </main>
+-
+-    <section class="optimization">
+-        <div class="container">
+-            <h2 class="optimization_header">Що таке оптимізація та навіщо вона потрібна?</h2>
+-            <div class="optimization_text">На просторах інтернету незліченна кількість діючих і навіть занедбаних сайтів. Більшість із них збігаються не лише за категоріями, а й за змістом.
+-                <br><br>
+-                Уявіть собі тисячі сайтів, на яких тим чи іншим чином надається та сама інформація або продається та сама послуга. І потрапити на ці сайти можна лише за тематичними запитами в пошукових системах.
+-                <br> <br>
+-                Але як вам бути, якщо ваш сайт схожий на сотню чи тисячу таких самих, а на одній сторінці гугла чи яндексу всього 10 позицій? Як навести відвідувачів сторінки свого ресурсу? Саме для цього потрібна оптимізація – для виведення вашого сайту на першу сторінку пошуку!
+-                <br><br>
+-                <span>Ми навчимо вас, як зробити ваш сайт привабливим для пошукових систем і порадимо, як вивести його на перші сторінки, оминаючи всіх конкурентів.</span>
+-            </div>
+-            <img src="img/bg/woman_bg.png" alt="woman" class="optimization_img">
+-        </div>
+-
+-    </section>
+-
+-    <section class="finish">
+-        <div class="container">
+-            <h2 class="finish_header">Після закінчення навчання Ви зможете!</h2>
+-            <div class="finish_divider"></div>
+-            <div class="finish_wrapper">
+-                <div class="finish_item">
+-                    <div class="finish_round">
+-                        <img src="icons/finish_icon_1.png" alt="finish1" class="finish_icon">
+-                    </div>
+-                    <div class="finish_descr">Створити свій сайт чи блог</div>
+-                </div>
+-                <div class="finish_item">
+-                    <div class="finish_round">
+-                        <img src="icons/finish_icon_2.png" alt="finish2" class="finish_icon">
+-                    </div>
+-                    <div class="finish_descr">Правильно його оптимізувати</div>
+-                </div>
+-                <div class="finish_item">
+-                    <div class="finish_round">
+-                        <img src="icons/finish_icon_3.png" alt="finish3" class="finish_icon">
+-                    </div>
+-                    <div class="finish_descr">Забезпечити йому повільне, але вірне зростання в ТОП</div>
+-                </div>
+-                <div class="finish_item">
+-                    <div class="finish_round">
+-                        <img src="icons/finish_icon_4.png" alt="finish4" class="finish_icon">
+-                    </div>
+-                    <div class="finish_descr">Досягти стабільного приросту відвідувачів</div>
+-                </div>
+-                <div class="finish_item">
+-                    <div class="finish_round">
+-                        <img src="icons/finish_icon_5.png" alt="finish5" class="finish_icon">
+-                    </div>
+-                    <div class="finish_descr">Отримувати відчутний прибуток</div>
+-                </div>
+-            </div>
+-        </div>
+-    </section>
+-
+-    <section class="gift">
+-        <div class="container">
+-            <img src="img/footer/gift.png" alt="gift" class="gift_img">
+-            <div class="gift_text">Для всіх учасників інтенсиву передбачені бонуси та подарунки. Натискайте на кнопку нижче, беріть участь у вебінарах та забирайте свій приз після закінчення навчання!</div>
+-            <button class="btn_gift">Записатись на інтенсив!</button>
+-        </div>
+-    </section>
+-
+-    <section class="first">
+-        <div class="container">
+-            <img src="img/footer/first.png" alt="first" class="first_img">
+-            <h2 class="first_header">Перший вебінар відбудеться:</h2>
+-            <div class="date">10 вересня о 20:00 по Київу</div>
+-            <div class="limited">Встигніть записатися, кількість місць обмежена!</div>
+-        </div>
+-    </section>
+-
+-    <footer class="footer">
+-        <div class="container">
+-            <div class="footer_text">
+-                <a href="#">Служба підтримки</a> | <a href="#">Політика конфіденційності</a><br>
+-            </div>
+-            <div class="footer_contact">Зателефонуйте нам +380960000000</div>
+-        </div>
+-    </footer>
+-</body>
+-</html>
+\ No newline at end of file
